@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Przewodnik</title>
+     <style>
+        ul {
+            background: #96844d;
+            padding: 10px;
+            list-style-type:circle;
+            line-height:160%;
+        }
+        ul li {
+            background: #f6f4e4;
+            padding: 5px;
+            margin-left: 15px;
+        }
+        h3 {
+            color:navy;
+        }
+        div {
+            width: 35%;
+            background-color: aliceblue;
+        }
+        #tabela {
+            font-family: "Cambria", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #tabela td, #tabela th {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+        #tabela tr:nth-child(odd){background-color: #b1e3df;}
+
+        #tabela tr:hover {background-color: #ccc;}
+
+        #tabela th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #a3e3e3;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<h2>
+    Przewodnik po stronach JSP z poprzednich zajęć
+</h2>
+<div>
+    <p>Przykład dla strony JSP <b><cite>mojeDane.jsp</cite></b></p>
+    <table id="tabela">
+    <tr>
+        <td>
+            Rezultat
+        </td>
+        <td>
+            <a href="mojeDane.jsp">efekt przetworzenia strony JSP</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Kod HTML
+        </td>
+        <td>
+            <a href="printJSPPage.jsp?page=mojeDane.jsp">źródło (HTML) przetworzonej strony</a>
+        </td>
+    </tr>
+   <tr>
+       <td>
+           Kod strony JSP
+       </td>
+       <td>
+           <b><a href="readJSPFile.jsp?file=mojeDane.jsp">kod źródłowy strony JSP</a></b>
+       </td>
+   </tr>
+    </table>
+</div>
+<h3>
+    Proste operacje na stronach JSP
+</h3>
+<ul>
+    </li>
+    <li>
+        <a href="mojeDane.jsp">Wyświetlenie moich danych (<b><a href="readJSPFile.jsp?file=mojeDane.jsp">mojeDane.jsp</a></b>)</a><img src="lawka.png" alt="abaccc"/>
+    </li>
+    <li>
+        <a href="figury.jsp">Obliczanie powierzchni figur geometrycznych (<b><a href="readJSPFile.jsp?file=figury.jsp">figury.jsp</a></b>)</a>
+    </li>
+    <li>
+        <a href="getLocale.jsp">Pobieranie danych lokalizacji językowej (<b><a href="readFile.jsp?file=getLocale.jsp">getLocale.jsp</a></b>)</a>
+    </li>
+    <li>
+        <a href="getRequest.jsp">Przekierowanie metodą get (<b><a href="readJSPFile.jsp?file=getRequest.jsp">getRequest.jsp</a> oraz <a href="readJSPFile.jsp?file=getResponse.jsp">getResponse.jsp)</a></b></a>
+    </li>
+    <li>
+        <a href="expression.jsp">Stosowanie wyrażeń (<b><a href="readJSPFile.jsp?file=expression.jsp">expression.jsp</a></b>)</a>
+    </li>
+    <li>
+        <a href="pageWithIncluded.jsp">Włączenie (inlude) strony nagłówkowej (<b><a href="readJSPFile.jsp?file=pageWithIncluded.jsp">pageWithIncluded.jsp</a></b>)</a>
+    </li>
+    <li>
+        <a href="myPageWithError.jsp">Obsługa błędów ("<b><a href="readJSPFile.jsp?file=myPageWithError.jsp">myPageWithIncluded.jsp oraz <b href="readJSPFile.jsp?fole=errorPage.jsp">errorPage.jsp></b></a></b>)</a>
+    </li>
+    <li>
+        <a href="users.jsp">Lista jako atrybut przekazywany w sesji (<b><a href="readJSPFile.jsp?file=users.jsp">users.jsp</a></b>)</a>
+    </li>
+</ul>
+<h3>
+    Znaczniki akcji JSP
+</h3>
+<ul>
+    <li>
+        <a href="pierwsza.jsp">Znacznik include ze źle sformatowaną stroną dołączaną (<b><a href="readJSPFile.jsp?file=pierwsza.jsp">pierwsza.jsp</a></b>)</a>
+    </li>
+    <li>
+        <a href="pierwsza2.jsp">Znacznik include (<b><a href="readJSPFile.jsp?file=pierwsza2.jsp">pierwsza2.jsp</a></b>)</a>
+    </li>
+    <li>
+        <a href="forwardedPage.jsp">Znacznik forward (<b><a href="readJSPFile.jsp?file=forwardedPage.jsp">forwardedPage.jsp</a></b>)</a>
+    </li>
+    <li>
+        <a href="bean.jsp">Znacznik setProperty i getProperty (<b><a href="readJSPFile.jsp?file=bean.jsp">bean.jsp</a></b>b> oraz forwardedBean.jsp)</a>
+    </li>
+    <li>
+        <a href="javaBeans.jsp">Znacznik setProperty i getProperty (<b><a href="readJSPFile.jsp?file=javaBean.jsp">javaBeans.jsp</a></b>  oraz forwardedJavaBean.jsp)</a>
+    </li>
+</ul>
+<h3>
+    Znaczniki JSTL
+</h3>
+<ul>
+    <li>
+        <a href="formattingNumber.jsp">Formatowanie liczb (<b><a href="readJSPFile.jsp?file=formattingNumber.jsp">formattingNumber.jsp</a></b>)</a>
+    </li>
+    <li>
+        <a href="formattingDate.jsp">Formatowanie dat (<b><a href="readJSPFile.jsp?file=formattingDate.jsp">formattingDate.jsp</a></b>)</a>
+    </li>
+    <li>
+        <a href="parseNumb.jsp">Parsowanie liczb (<b><a href="readJSPFile.jsp?file=parseNumb.jsp">parseNumb.jsp</a></b>)</a>
+    </li>
+    <li>
+        <a href="parseNumber.jsp">Kolejne parsowanie liczb (<b><a href="readJSPFile.jsp?file=parseNumber.jsp">parseNumber.jsp</a></b>)</a>
+    </li>
+    <li>
+        <a href="jstl_parseDate.jsp">Parsowanie daty (<b><a href="readJSPFile.jsp?file=jstl_parseDate.jsp">jstl_parseDate.jsp</a></b>)</a>
+    </li>
+    <li>
+        <a href="text.jsp">Znacznik jstl:text (<b><a href="readJSPFile.jsp?file=text.jsp">text.jsp</a></b>)</a>
+    </li>
+    <li>
+        <a href="tagLibCoreSet.jsp">Znacznik c:set mapa (<b><a href="readJSPFile.jsp?file=tagLibCoreSet">tagLibCoreSet.jsp</a></b>)</a>
+    </li>
+    <li>
+        <a href="tagLibCoreImport.jsp">Znacznik c:import (<b><a href="readJSPFile.jsp?file=tagLibCoreImport">tagLibCoreImport.jsp</a></b>)</a>
+    </li>
+    <li>
+        <a href="tagLibCoreRemove.jsp">Znacznik c:remove (<b><a href="readJSPFile.jsp?file=tagLibCoreRemove">tagLibCoreRemove.jsp</a></b>)</a>
+    </li>
+    <li>
+        <a href="length.jsp">Znacznik <cite>fn:length</cite> (<b><a href="readJSPFile.jsp?file=length.jsp">length.jsp</a></b>)</a>
+    </li>
+    <li>
+        <a href="substringSubstringAfter.jsp">Znaczniki <cite>fn:substring</cite> i <cite>fn:substringAfter</cite> (<b><a href="readJSPFile.jsp?file=substringSubstringAfter.jsp">substringSubstringAfter.jsp</a></b>)</a>
+    </li>
+    <li>
+        <a href="splitJoin.jsp">Znaczniki <cite>fn:split</cite> i <cite>fn:join</cite> (<b><a href="readJSPFile.jsp?file=splitJoin.jsp">splitJoin.jsp</a></b>)</a>
+    </li>
+</ul>
+<h3>
+    A tutaj nowości jeszcze nie przerabiane (a umieszczone w projekcie <cite>jsp_01</cite>)
+</h3>
+<ul>
+    <li>
+        <a href="headers.jsp">Informacja nagłówkowa z request (<b><a href="readJSPFile.jsp?file=headers.jsp">headers.jsp</a></b>)</a>
+    </li>
+    <li>
+        <a href="xml.jsp">Użycie znacznika x:forEach (dla XML w bibliotece jstl) (<b><a href="readJSPFile.jsp?file=xml.jsp">xml.jsp</a></b>)</a>
+        <p>Działa również w projekcie demo3</p>
+    </li>
+    <li>
+        <a href="xmlParse.jsp">Użycie znaczników <cite>x:import</cite> oraz <cite>x:parse</cite> (<b><a href="readJSPFile.jsp?file=xmlParse.jsp">xmlParse.jsp</a></b>)</a></a>
+    </li>
+    <li>
+        <a href="xmlForEach.jsp">Kolejne użycie znacznika x:forEach (dla XML w bibliotece jstl) (<b><a href="readJSPFile.jsp?file=xmlForEach.jsp">xmlForEach.jsp</a></b>)</a>
+    </li>
+    <li>
+        <a href="xmlChooseWhen.jsp">Użycie znaczników <cite>x:choose</cite> oraz <cite>x:when</cite> (dla XML w bibliotece jstl) (<b><a href="readJSPFile.jsp?file=xmlChooseWhen.jsp">xmlChooseWhen.jsp</a></b>)</a>
+    </li>
+    <li>
+        <a href="startsWith.jsp">Znaczniki <cite>startsWith</cite> oraz <cite>endsWith</cite> w bibliotece JSTL c:format (<b><a href="readJSFile.jsp?file=startsWith.jsp">startsWith.jsp</a></b>)</a>
+    </li>
+    <li>
+        <p>Przyjrzeć się stronie xml2.jsp w projekcie xml2 (C:\Users\48605\IdeaProjects\demo3)</p>
+    </li>
+</ul>
+</body>
+</html>

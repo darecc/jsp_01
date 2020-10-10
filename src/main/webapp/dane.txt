@@ -1,0 +1,9 @@
+<%
+    List<User> list = new ArrayList<User>();
+      User u1 = new User("Jan", "nowak123");
+      User u2 = new User("Anna", "karenina123");
+      User u3 = new User("John", "john123");
+      User u4 = new User("Jadwiga", "jadwisia");
+      User u5 = new User("Karol", "karolek$");
+      list.addAll(Arrays.asList(u1,u2,u3, u4, u5));
+  %>
